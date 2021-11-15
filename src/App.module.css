@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f1f5f8;
+  /* background-color: red; */
+}
+
+.App {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10vh;
+  /* background-color: red; */
+}
+
+.CardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.MovieContainer {
+  display: flex;
+
+  /* background-color: aqua; */
+  height: 8vh;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10vh;
+}
+
+.ImageFrame {
+  flex: 2;
+  /* background-color: green; */
+}
+
+.ImageFrame img {
+  width: 100%;
+  height: 60vh;
+}
+
+.MovieDetails {
+  flex: 3;
+  /* background-color: red; */
+  padding: 20px;
+}
+
+.Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  background: aqua;
+
+  border: none;
+  padding: 20px;
+
+  box-shadow: 2px 2px 5px;
+  margin-top: 20px;
+}
+
+.ButtonText{
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.Title {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.Details {
+    font-size: 18px;
+    padding: 20px 0;
+}
+.Year {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+/* Mobile */
+@media only screen and (max-width : 480px){
+  .MovieContainer{
+    flex-direction: column;
+  }
+}

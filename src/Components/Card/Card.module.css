@@ -1,0 +1,61 @@
+.Card{
+    flex: 1 20%;
+    /* max-width: 20%; */
+    /* margin-right: 20px; */
+
+    margin: 20px 20px 20px 0px;
+
+    height: 45vh;
+    /* border: 1px solid red; */
+    position: relative;
+    overflow: hidden;
+
+    /* transition: all 4s; */
+}
+
+.Card:hover{
+    cursor: pointer;
+}
+
+.Card:hover  .Overlay{
+    transform: translateY(0);
+
+    transition: all 0.2s ease-in-out;
+
+}
+
+.Card img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.Overlay{
+    
+    position: absolute;
+    color: #fff;
+    background-color: #000;
+    opacity: 0.7;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    min-height: 30%;
+
+    transform: translateY(1000px);
+}
+
+.Title{
+    font-size: 16px;
+}
+
+.Year{
+    font-size: 14px;
+}
+
+
+/* Mobile */
+@media only screen and (max-width : 480px){
+    .Card{
+        flex: 1 100%;
+    }
+}
