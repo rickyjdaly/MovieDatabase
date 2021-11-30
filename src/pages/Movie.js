@@ -18,7 +18,7 @@ const Movie = (props) => {
       url: "https://imdb8.p.rapidapi.com/title/get-overview-details",
       params: { tconst: id, currentCountry: "US" },
       headers: {
-        "x-rapidapi-key": "ddc89a2bdfmshdc3abdfbf034538p19766ejsn393a62bcc53f",
+        "x-rapidapi-key": process.env.REACT_APP_KEY,
         "x-rapidapi-host": "imdb8.p.rapidapi.com",
       },
     };
@@ -49,7 +49,7 @@ const Movie = (props) => {
       params: { tconst: id },
       headers: {
         "x-rapidapi-host": "imdb8.p.rapidapi.com",
-        "x-rapidapi-key": "810d263776msh02141e7e93f8122p19c073jsnbde6be5d7ed9",
+        "x-rapidapi-key": process.env.REACT_APP_KEY,
       },
     };
 

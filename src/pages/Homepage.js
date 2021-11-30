@@ -11,7 +11,7 @@ const Homepage = () => {
 
   const [search, setSearch] = useState("spiderman");
 
-
+  
 
   useEffect(() => {
     var options = {
@@ -19,7 +19,7 @@ const Homepage = () => {
       url: "https://imdb8.p.rapidapi.com/auto-complete",
       params: { q: search },
       headers: {
-        "x-rapidapi-key": "ddc89a2bdfmshdc3abdfbf034538p19766ejsn393a62bcc53f",
+        "x-rapidapi-key": process.env.REACT_APP_KEY,
         "x-rapidapi-host": "imdb8.p.rapidapi.com",
       },
     };
